@@ -28,6 +28,7 @@ class Solution:
                 continue
             # 在子问题中选择最优解，然后加一
             res = min(res, subProblem + 1)
+            res
         # 把计算结果存入备忘录
         self.memo[amount] = res if res != float('inf') else -1
         return self.memo[amount]
@@ -36,6 +37,6 @@ class Solution:
 if __name__ == "__main__":
     solution = Solution()
     coins = [1, 2, 5]
-    amount = 18
+    amount = 8
     result = solution.coinChange(coins, amount)
-    print(f"最少硬币数: {result}")  # 期望输出: 3 (11 = 5 + 5 + 1)
+    print(f"最少硬币数: {result}")
