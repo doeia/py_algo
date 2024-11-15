@@ -8,9 +8,12 @@
 
 算法的本质就是「穷举」
 '''
+
+
 from typing import List
+
 '''
-数组遍历框架，典型的线性迭代结构：
+1. 数组遍历框架，典型的线性迭代结构：
 '''
 
 
@@ -21,9 +24,8 @@ def traverse(arr: List[int]):
 
 
 '''
-链表遍历框架，兼具迭代和递归结构：
+2. 链表遍历框架，兼具迭代和递归结构：
 '''
-# 基本的单链表节点
 
 
 class ListNode:
@@ -45,9 +47,8 @@ def traverse3(head: ListNode) -> None:
 
 
 '''
-二叉树遍历框架，典型的非线性递归遍历结构：
+3. 二叉树遍历框架，典型的非线性递归遍历结构：
 '''
-# 基本的二叉树节点
 
 
 class TreeNode:
@@ -63,9 +64,8 @@ def traverse4(root: TreeNode):
 
 
 '''
-二叉树框架可以扩展为 N 叉树的遍历框架：
+4. 二叉树框架可以扩展为 N 叉树的遍历框架：
 '''
-# 基本的 N 叉树节点
 
 
 class TreeNode:
