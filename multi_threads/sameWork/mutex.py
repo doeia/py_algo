@@ -8,7 +8,7 @@ lock = threading.Lock()
 
 def increment():
     global counter
-    for _ in range(100000):
+    for _ in range(100000000):
         lock.acquire()  # 获取锁
         try:
             counter += 1

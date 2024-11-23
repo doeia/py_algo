@@ -3,7 +3,7 @@ import time
 
 def no_concurrency_sum():
     counter = 100000
-    for _ in range(100000):
+    for _ in range(100000000):
         try:
             counter += 1
         except Exception as e:
